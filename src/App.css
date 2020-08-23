@@ -1,0 +1,252 @@
+.App {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-content {
+  display: flex;
+  justify-content: center;
+  margin: 20vh 5vw;
+  max-width: 650px;
+}
+
+.header .header-text .header-title p {
+  font-size: 20px;
+  color: #A6A9AD;
+  font-weight: 800;
+
+  text-align: start;
+}
+
+.header .header-text .header-description p {
+  font-size: 18px;
+  color: #A6A9AD;
+  font-weight: 400;
+
+  text-align: start;
+}
+
+.header .header-content img {
+  width: 50vw;
+}
+
+.timeline {
+  background: #f4f4f4;
+}
+
+.timeline img {
+  margin-bottom: -10px;
+  width: 100%;
+}
+
+.timeline-content {
+  background: #282a36;
+  text-align: center;
+}
+
+.vertical-timeline-element-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.vertical-timeline-element--work p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #f4f4f4;
+}
+
+/* Shmming effect */
+
+.shimming-effect {
+  display: grid;
+  
+  justify-content: center;
+}
+
+.shimming-title {
+  display: flex;
+  justify-content: center;
+
+  animation : shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #e7edf1 0%, #cfcccc 50%, #e7edf1 100%);
+  background-size: 400% 400%;
+  width: 40vw;
+  height: 2vh;
+
+  border-radius: 5px;
+
+  filter: brightness(96%);
+
+  
+}
+
+.shimming-subtitle {
+  justify-self: center;
+  margin-top: 5px;
+
+  animation : shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #e7edf1 0%, #cfcccc 50%, #e7edf1 100%);
+  background-size: 400% 400%;
+  width: 20vw;
+  height: 1.6vh;
+
+  border-radius: 5px;
+
+  filter: brightness(96%);
+}
+
+.shimming-description-line1 {
+  justify-self: center;
+  margin-top: 18px;
+
+  animation : shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #e7edf1 0%, #cfcccc 50%, #e7edf1 100%);
+  background-size: 400% 400%;
+  width: 15vw;
+  height: 1.3vh;
+
+  border-radius: 5px;
+
+  filter: brightness(96%);
+}
+
+.shimming-description-line2 {
+  justify-self: center;
+  margin-top: 5px;
+
+  animation : shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #e7edf1 0%, #cfcccc 50%, #e7edf1 100%);
+  background-size: 400% 400%;
+  width: 27vw;
+  height: 1.3vh;
+
+  border-radius: 5px;
+
+  filter: brightness(96%);
+}
+
+.shimming-description-line3 {
+  justify-self: center;
+  margin-top: 5px;
+
+  animation : shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #f8f9fa 0%, #ced4da 50%, #f8f9fa 100%);
+  background-size: 400% 400%;
+  width: 20vw;
+  height: 1.3vh;
+
+  border-radius: 5px;
+
+  filter: brightness(96%);
+}
+
+@media screen and (min-width: 1000px) {
+  
+  .shimming-title {
+    justify-self: center;
+    width: 20vw;
+    height: 2vh;
+
+    border-radius: 5px;
+  }
+
+  .shimming-subtitle {
+    justify-self: center;
+    width: 13vw;
+    height: 1.6vh;
+
+    border-radius: 5px;
+  }
+
+  .shimming-description-line1 {
+    justify-self: center;
+    width: 15vw;
+    height: 1.3vh;
+
+    border-radius: 5px;
+  }
+
+  .shimming-description-line2 {
+    justify-self: center;
+    width: 23vw;
+    height: 1.3vh;
+
+    border-radius: 5px;
+  }
+
+  .shimming-description-line3 {
+    width: 20vw;
+    height: 1.3vh;
+
+    border-radius: 5px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+/* Scroll-animation */
+
+.moving-mouse-holder {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.moving-mouse-holder .mouse {
+  width: 26px;
+  height: 40px;
+  position: relative;
+  right: 0;
+  border-radius: 18px;
+  border: 2px solid #44475a;
+}
+
+.moving-mouse-holder .mouse-button {
+  background-color: #44475a;
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  animation: mouse-scroll 1s infinite alternate;
+}
+
+@keyframes mouse-scroll {
+  to {
+    transform: translate(0, 6px) scale(1, 0.8);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header .header-content {
+      flex-direction: column;
+      margin: 5vh 10vw;
+  }
+
+  .header .header-content img {
+    width: 100%;
+    margin-bottom: 0.5vh;
+  }
+}
