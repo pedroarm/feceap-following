@@ -20,7 +20,7 @@ function App() {
         <div className="header-content">
           <div className="header-text">
             <div className="header-title">
-              <p>Por que estamos fazemos isso?</p>
+              <p>Por que estamos fazendo isso?</p>
             </div>
             <div className="header-description">
               <p>Este projeto tem como objetivo trabalhar em cima das dificuldades diárias das pessoas. Para que seja possível contribuir de forma mensurável no desenvolvimento da sociedade como um todo, e assim buscar uma solução viável para qualquer problema.</p>
